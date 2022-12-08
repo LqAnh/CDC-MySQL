@@ -40,7 +40,7 @@ add this line to the end
 
         plugin.path=${PATH TO /connect FOLDER AT STEP 1}
 
-![](../../../../../var/folders/4k/nbp13h0145n0q5rnrz0mxqnc0000gn/T/TemporaryItems/NSIRD_screencaptureui_lxIefq/Screenshot 2022-12-08 at 14.28.36.png)
+![img_1.png](img_1.png)
 
 3. Start all the services
  
@@ -59,7 +59,7 @@ add this line to the end
         bin/connect-standalone.sh config/connect-standalone.properties connection-properties/elasticsearch-connect.properties connection-properties/mysql-connect.properties
 4. If everything work topic list will look like this
    
-   ![](../../../../../var/folders/4k/nbp13h0145n0q5rnrz0mxqnc0000gn/T/TemporaryItems/NSIRD_screencaptureui_LkIUM1/Screenshot 2022-12-08 at 14.37.48.png)
+   ![img_2.png](img_2.png)
 
 5. Topic dbhistory.sync capture all the changes to all the tables
 
@@ -69,9 +69,9 @@ add this line to the end
    - This is the value of message from kafka topic when I run 3 bellow SQL command. 
    - I use java code in the `kafka-connector` project to parse from json. 
 
-      ![](../../../../../var/folders/4k/nbp13h0145n0q5rnrz0mxqnc0000gn/T/TemporaryItems/NSIRD_screencaptureui_vjg1dI/Screenshot 2022-12-08 at 14.47.30.png)
+      ![img_3.png](img_3.png)
 
-      ![](../../../../../var/folders/4k/nbp13h0145n0q5rnrz0mxqnc0000gn/T/TemporaryItems/NSIRD_screencaptureui_wEnmx3/Screenshot 2022-12-08 at 14.48.03.png)
+      ![img_4.png](img_4.png)
 
 7. You can go to `localhost:5601` to view Elasticsearch document corresponding to Kafka topic name.
    - All the Insert operator work perfect and can be synchronized between MySQL and Elasticsearch
