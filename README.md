@@ -28,8 +28,7 @@ https://www.confluent.io/hub/confluentinc/kafka-connect-elasticsearch
 
 1. Place the `connect/debezium-connector-mysql` and `connection properties` to Apache Kafka folder like this
 
-    
-   ![alt text](Screenshot 2022-12-08 at 14.21.49.png)
+   ![Screenshot.png](Screenshot.png)
     
 - folder `connect/debezium-connector-mysql` place all the jar file of MySQL source connector and Elasticsearch sink connector.
 - folder `connection properties` contains 2 property file to connect from Kafka to MySQL and Elasticsearch. `YOU NEED TO CHANGE THE CONFIG TO YOURS SERVER SETTING`
@@ -40,7 +39,7 @@ add this line to the end
 
         plugin.path=${PATH TO /connect FOLDER AT STEP 1}
 
-![img_1.png](img_1.png)
+   ![img_1.png](img_1.png)
 
 3. Start all the services
  
